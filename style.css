@@ -1,0 +1,122 @@
+body {
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.block {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-template-rows: 1fr 30% 10%;
+    grid-template-areas: 
+    ". be1 be2 be3 ."
+    ".be4 be5 be6 ."
+    ". n n n .";
+    margin: 0%;
+    gap: 5%;  
+}
+
+.block__elem1 {
+    grid-area: be1;
+}
+.block__elem2 {
+    grid-area: be2;
+}
+.block__elem3 {
+    grid-area: be3;
+}
+.block__elem4 {
+    grid-area: be4;
+}
+.block__elem5 {
+    grid-area: be5;
+}
+.block__elem6 {
+    grid-area: be6;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 90%;
+    background-color: rgba(236, 97, 91, 1);
+    padding: 0% 5% 10% 5%;
+    
+}
+
+.nav {
+    grid-area: n;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.element__img {
+    background-color: rgba(236, 97, 91, 1);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    height: 44%;
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+.element__text, input[type="text"], .nav__link {
+    font-family:'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 160%;
+    color: #000000;
+}
+
+.element__slogan {
+    font-family:'Intro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    padding-top: 8%;
+}
+
+.element__slogan_wite {
+    color: white;
+}
+
+/* кнопки */
+.header-btn__link, .element__btn {
+    text-decoration: none;
+    color: #fff;
+    font-family:'Intro';
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.element__btn_subscribe {
+    width: 50%;
+}
+.header-btn, .element__btn  {
+    background-color: rgba(82, 34, 208, 1);
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url(assets/fonts/intro_regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.subtitle {
+    font-family:'Intro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 120%;
+    margin-left: 9.5%;
+}
+
